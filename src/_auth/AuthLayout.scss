@@ -1,0 +1,72 @@
+@import '../lib/Sass/variables/index.scss';
+@import '../lib/Sass/fonts/typography';
+
+*{
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.authContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.authframe{
+    background-color: $lendsqrOffWhite;
+    width: 50%;
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    img.illustration{
+        width: 600px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        padding: 0 67px 0 67px;
+        
+    }
+    img.logo{
+        position: absolute;
+        left: 97px;
+        top: 106px;
+    }
+}
+
+.authform{
+    width: 50%;
+    display: flex;
+    padding: 0 0 0 100px;
+}
+
+.signin-container{
+    // padding: 0 67px 0 67px;
+
+
+    .signin-header{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1{
+            font-family: $font-family-base;
+            font-weight: 700;
+            font-size: 40px;
+            color: $primarycol
+        }
+        p{
+            font-family: $font-family-base;
+            font-weight: 400;
+            font-size: 20px;
+            color: $subText
+        }
+    }
+    .signin-body{
+
+    }
+}

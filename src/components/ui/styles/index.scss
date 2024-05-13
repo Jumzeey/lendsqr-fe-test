@@ -1,0 +1,36 @@
+@import '../../../lib/Sass/variables/index.scss';
+@import '../../../lib/Sass/fonts/typography';
+
+
+.input-wrapper {
+    margin-bottom: 1rem;
+    position: relative;
+  
+    .custom-input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: $border-primary;
+      border-radius: 5px;
+      outline: none;
+      width: 450px;
+      height: 35px;
+        
+      &::placeholder {
+        color: #999; 
+        font-weight: 400px;
+        opacity: .6;
+        font-family: $font-family-base;
+      }
+
+      &:focus {
+        border-color: $lendsqrGreen;
+        box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.2);
+      }
+    }
+    span{
+        position: absolute;
+        top: 50%;
+        right: 0.75rem;
+        cursor: pointer;
+    }
+  }
