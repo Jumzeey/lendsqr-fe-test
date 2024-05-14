@@ -28,6 +28,10 @@
         border-color: $lendsqrGreen;
         box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.2);
       }
+
+      @media (max-width: 786px) {
+        width: 300px;
+      }
     }
     span{
         position: absolute;
@@ -37,5 +41,9 @@
         transform: translateY(-50%);
         cursor: pointer;
         color: $lendsqrGreen;
+
+        @media (max-width: 786px) {
+            right: 1.5rem;
+          }
     }
   }

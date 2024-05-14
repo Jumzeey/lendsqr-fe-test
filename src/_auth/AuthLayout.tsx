@@ -2,6 +2,7 @@ import { Outlet, Navigate } from 'react-router-dom'
 import './AuthLayout.scss'
 import logoImage from '../assets/loginImage.svg'
 import logo from '../assets/lendsqrlogo.svg'
+import logoMob from '../assets/logoMob.svg'
 
 const AuthLayout = () => {
     const isAutheticated = false;
@@ -30,6 +31,10 @@ const AuthLayout = () => {
 
                         </section>
                         <section className='authform'>
+                            <img
+                                src={logoMob}
+                                alt="logo"
+                            />
                             <Outlet />
                         </section>
                     </div>

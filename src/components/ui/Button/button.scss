@@ -33,5 +33,9 @@
     &:hover {
       opacity: 0.9;
     }
+
+    @media (max-width: 786px) {
+        width: 320px;
+    }
   }
   
