@@ -1,6 +1,6 @@
 import React from 'react'
-import { IInputPropType } from '../../lib/types'
-import './styles/index.scss'
+import { IInputPropType } from '../../../lib/types'
+import './input.scss'
 
 const Input: React.FC<IInputPropType> = ({ placeholder, suffix,  ...rest }) => {
   return (

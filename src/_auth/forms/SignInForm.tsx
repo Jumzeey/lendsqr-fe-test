@@ -1,5 +1,7 @@
 import '../AuthLayout.scss'
-import Input from '../../components/ui/input'
+import Input from '../../components/ui/Input'
+import PasswordInput from '../../components/ui/PasswordInput'
+import Button from '../../components/ui/Button'
 
 const SignInForm = () => {
 
@@ -12,6 +14,11 @@ const SignInForm = () => {
         </div>
         <div className='signin-body'>
           <Input type='text' placeholder='Email' />
+          <PasswordInput  placeholder='Password' />
+          <p>FORGOT PASSWORD?</p>
+        </div>
+        <div className='signin-footer'>
+        <Button variant="primary">LOG IN</Button>
         </div>
       </div>
     </>
