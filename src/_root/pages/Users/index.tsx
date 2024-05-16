@@ -1,3 +1,4 @@
+import React from "react"
 import Card from "../../../components/ui/Card"
 import users from '@/assets/users.svg'
 import active from '@/assets/active.svg'
@@ -8,7 +9,7 @@ import './index.scss'
 import { IUserData } from "../../../lib/types"
 import { useEffect, useState } from "react"
 
-const Users = () => {
+const Users: React.FC = () => {
   const [cardData, setCardData] = useState<IUserData>({
     user_count: 0,
     active_users_count: 0,
@@ -16,18 +17,13 @@ const Users = () => {
     users_with_savings_count: 0
   }) 
 
-  const response = {
-    "user_count": 500,
-    "active_users_count": 300,
-    "users_loan_count": 100,
-    "users_with_savings_count": 350
-}
+  
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await axios.get<IUserData>("/8670df66-f175-4696-b8f4-2501a7350b96");
-        setCardData(response);
+        const response = await axios.get<IUserData>("1a9acd7f-bd06-40ed-89d0-e0d0083c7bb0");
+        setCardData(response.data);
         
       } catch (error) {
         console.error("Error fetching data:", error);

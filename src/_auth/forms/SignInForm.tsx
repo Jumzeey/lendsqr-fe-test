@@ -1,10 +1,11 @@
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../AuthLayout.scss'
 import Input from '../../components/ui/Input'
 import PasswordInput from '../../components/ui/PasswordInput'
 import Button from '../../components/ui/Button'
 
-const SignInForm = () => {
+const SignInForm: React.FC = () => {
 const navigate = useNavigate();
 
 

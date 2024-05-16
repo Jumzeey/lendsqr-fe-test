@@ -1,8 +1,9 @@
+import React from "react"
 import { ICard } from "../../../lib/types"
 import './index.scss'
 
 
-const Card: React.FC<ICard> = ({ icon, figure, title, ...props }) => {
+const Card: React.FC<ICard> = ({ icon, figure, title }) => {
     return (
         <div className="card-container">
             <div className="icon">

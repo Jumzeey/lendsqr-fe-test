@@ -1,10 +1,11 @@
+import React from 'react'
 import { Outlet, Navigate } from 'react-router-dom'
 import './AuthLayout.scss'
 import logoImage from '../assets/loginImage.svg'
 import logo from '../assets/lendsqrlogo.svg'
 import logoMob from '../assets/logoMob.svg'
 
-const AuthLayout = () => {
+const AuthLayout: React.FC = () => {
     const isAutheticated = false;
 
     return (
