@@ -1,9 +1,16 @@
+import { useNavigate } from 'react-router-dom'
 import '../AuthLayout.scss'
 import Input from '../../components/ui/Input'
 import PasswordInput from '../../components/ui/PasswordInput'
 import Button from '../../components/ui/Button'
 
 const SignInForm = () => {
+const navigate = useNavigate();
+
+
+  const handleSubmit = () => {
+    navigate('/users')
+  }
 
   return (
     <>
@@ -18,7 +25,11 @@ const SignInForm = () => {
           <p>FORGOT PASSWORD?</p>
         </div>
         <div className='signin-footer'>
-        <Button variant="primary">LOG IN</Button>
+        <Button 
+        variant="primary"
+        onClick={handleSubmit}
+        >
+          LOG IN</Button>
         </div>
       </div>
     </>

@@ -12,3 +12,22 @@ export type IButtonPropType = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: 'primary' | 'secondary' | 'danger';
   type?: 'submit' | 'reset' | 'button';
 };
+
+export type IItems = {
+  name: string;
+  icon: string;
+  active?: boolean;
+};
+export type ICard = {
+  title: string;
+  icon: string;
+  figure: number;
+};
+
+export type IUserData = {
+  user_count: number;
+  active_users_count: number;
+  users_loan_count: number;
+  users_with_savings_count: number;
+}
+

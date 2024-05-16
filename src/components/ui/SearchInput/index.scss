@@ -1,0 +1,65 @@
+@import '../../../lib/Sass/variables/index.scss';
+@import '../../../lib/Sass/fonts/typography';
+
+* {
+    font-family: $font-family-base;
+    overflow: auto;
+}
+
+.search-input-wrapper {
+    position: relative;
+    overflow: auto;
+
+    .custom-input {
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        font-size: 1rem;
+        border: $border-primary;
+        border-radius: 8px;
+        outline: none;
+        width: 400px;
+        height: fit-content;
+
+        &::placeholder {
+            color: #999;
+            font-weight: 400px;
+            opacity: .6;
+        }
+
+        &:focus {
+            border-color: $lendsqrGreen;
+            box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.2);
+        }
+
+        @media (max-width: 786px) {
+            width: 300px;
+        }
+    }
+
+    span {
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        right: 0;
+        font-weight: 600;
+        height: 100%;
+        width: 50px;
+        outline: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $lendsqrGreen;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: $lendsqrGreen;
+
+        img {
+            object-fit: contain; // Ensures the image scales correctly
+        }
+
+        @media (max-width: 786px) {
+            right: 1.5rem;
+        }
+    }
+}

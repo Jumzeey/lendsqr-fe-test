@@ -1,0 +1,19 @@
+@import '../lib/Sass/variables/index.scss';
+@import '../lib/Sass/fonts/typography';
+
+.root-layout {
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    background-color: $lendsqrChildCol;
+    
+
+    .outlet{
+        padding: 60px;
+    }
+  }
+  
+  

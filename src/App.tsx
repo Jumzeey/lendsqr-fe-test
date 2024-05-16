@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import SignInForm from './_auth/forms/SignInForm'
 import AuthLayout from './_auth/AuthLayout'
+import RootLayout from './_root/RootLayout'
+import { Users } from './_root/pages'
 import './App.scss'
 
 const App = () => {
@@ -10,13 +12,13 @@ const App = () => {
     <Routes>
         {/* public routes */}
         <Route element={<AuthLayout />}>
-          <Route path='/sign-in' element={< SignInForm/>} />
+          <Route index element={< SignInForm/>} />
         </Route>
 
         {/* private routes */}
-        {/* <Route element={<RootLayout />}>
-          <Route index element={< Home />} />
-        </Route> */}
+        <Route element={<RootLayout />}>
+          <Route path='/users' element={< Users />} />
+        </Route>
 
 
       </Routes>

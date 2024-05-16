@@ -1,0 +1,79 @@
+@import '../../../lib/Sass/variables/index.scss';
+@import '../../../lib/Sass/fonts/typography';
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 0 1.5rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+    &__left{
+      display: flex;
+      gap: 145px;
+    }
+    
+  
+    &__logo {
+      display: flex;
+      align-items: center;
+      width: 140px;
+  
+      img {
+        height: 40px;
+        margin-right: 0.5rem;
+      }
+    }
+  
+    &__search {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__right {
+      display: flex;
+      width: 250px;
+      justify-content: space-between;
+      align-items: center;
+  
+      a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: $primarycol;
+        font-family:  sans-serif;
+        font-size: 1rem;
+        text-decoration: underline;
+      }
+  
+      .notifications {
+        cursor: pointer;
+      }
+  
+      .profile {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .label{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+        .profile_image{
+          border-radius: 100%;
+          width: 48px;
+          height: 48px;
+        }
+        span {
+          font-size: 1rem;
+          color: $primarycol;
+        }
+        
+      }
+    }
+  }
+  

@@ -1,0 +1,46 @@
+{
+    "sections": [
+      {
+        "items": [
+          { "name": "Switch Organisation", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/briefcase%201_-lqm1_AXCh.svg?updatedAt=1715783299906"},
+          { "name": "Dashboard", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/users%201_sOutLOn0T.png?updatedAt=1715783402793" }
+        ]
+      },
+      {
+        "header": "Customers",
+        "items": [
+          { "name": "Users", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/user-friends%201_iwO02yMw0.svg?updatedAt=1715783301423", "active":true },
+          { "name": "Guarantors", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/users%201_sOutLOn0T.png?updatedAt=1715783402793" },
+          { "name": "Loans", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/sack%201_bzJXLOSXY.svg?updatedAt=1715783298907" },
+          { "name": "Decision Models", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/handshake-regular%201_WT4ORkvZu.svg?updatedAt=1715783299839" },
+          { "name": "Savings", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/piggy-bank%201_OYw0qWYx6.svg?updatedAt=1715783298622" },
+          { "name": "Loan Requests", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/Group%20104_ncdtMzLgV.svg?updatedAt=1715783299975" },
+          { "name": "Whitelist", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/user-check%201_JwYLKjkaH.svg?updatedAt=1715783301137" },
+          { "name": "Karma", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/user-times%201_bjUZqfMp3.svg?updatedAt=1715783301176" }
+        ]
+      },
+      {
+        "header": "Businesses",
+        "items": [
+          { "name": "Organization", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/briefcase%201_-lqm1_AXCh.svg?updatedAt=1715783299906" },
+          { "name": "Loan Products", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/Group%20104_ncdtMzLgV.svg?updatedAt=1715783299975" },
+          { "name": "Savings Products", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/np_bank_148501_000000%201_Kbkxutrvo.svg?updatedAt=1715783298460" },
+          { "name": "Fees and Charges", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/coins-solid%201_EWS3mLkZLq.svg?updatedAt=1715783295702" },
+          { "name": "Transactions", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/icon%20(2)__TgNxCN1va.svg?updatedAt=1715783295920" },
+          { "name": "Services", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/galaxy%201_7TP6y6NX5.svg?updatedAt=1715783295709" },
+          { "name": "Service Account", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/user-cog%201_bfxi6WWPO.svg?updatedAt=1715783301205" },
+          { "name": "Settlements", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/scroll%201_tKmKVIw7e.svg?updatedAt=1715783299066" },
+          { "name": "Reports", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/chart-bar%202_BGBppLxXI.svg?updatedAt=1715783295840" }
+        ]
+      },
+      {
+        "header": "Settings",
+        "items": [
+          { "name": "Preferences", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/sliders-h%201_1QWP_9VZd.svg?updatedAt=1715783298662" },
+          { "name": "Fees and Pricing", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/badge-percent%201_efmN22QH8e.svg?updatedAt=1715783296025" },
+          { "name": "Audit Logs", "icon": "https://ik.imagekit.io/jumzeey/lendsqr/clipboard-list%201_7qrGpbanH.svg?updatedAt=1715783295793" }
+        ]
+      }
+    ]
+  }
+  

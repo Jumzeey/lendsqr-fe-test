@@ -1,21 +1,26 @@
+
+//avenir
 @font-face {
     font-family: 'Avenir-Next';
     font-style: normal;
     font-weight: 400;
     src: url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff');
 }
+
 @font-face {
     font-family: 'Avenir-Next';
     font-style: normal;
     font-weight: 700;
     src: url(/fonts/Avenir/AvenirNextCyr-Bold.woff) format('woff');
 }
+
 @font-face {
     font-family: 'Avenir-Next';
     font-style: normal;
     font-weight: 500;
     src: url(/fonts/Avenir/AvenirNextCyr-Medium.woff) format('woff');
 }
+
 @font-face {
     font-family: 'Avenir-Next';
     font-style: normal;
@@ -23,10 +28,59 @@
     src: url(/fonts/Avenir/AvenirNextCyr-Demi.woff) format('woff');
 }
 
+//work-sans
+@font-face {
+    font-family: 'Work-Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../../../../public/fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf) format('ttf');
+}
 // @font-face {
-//     font-family: 'Avenir-Next';
-//     font-style: bold;
-//     src: url(../../../assets/fonts/AvenirNextLTPro-Bold.otf) format('otf');
+//     font-family: 'Work-Sans';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url(fonts/Work_Sans/static/WorkSans-Black.ttf) format('ttf');
+// }
+// @font-face {
+//     font-family: 'Work-Sans';
+//     font-style: normal;
+//     font-weight: 600;
+//     src: url(/fonts/Work_Sans/static/WorkSans-Medium.ttf) format('ttf');
+// }
+// @font-face {
+//     font-family: 'Work-Sans';
+//     font-style: normal;
+//     font-weight: 700;
+//     src: url(/public/fonts/Work_Sans/static/WorkSans-Bold.ttf) format('ttf');
 // }
 
-$font-family-base:'Avenir-Next'
+//roboto
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../../../public/fonts/Roboto/Roboto-Light.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../../../../public/fonts/Work_Sans/static/WorkSans-Bold.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../../../../public/fonts/Work_Sans/static/WorkSans-Medium.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../../../../public/fonts/Work_Sans/static/WorkSans-Bold.ttf) format('ttf');
+}
+
+
+$font-family-base: 'Avenir-Next';
+$font-family-roboto: 'Roboto';
+$font-family-workSans: 'Work-Sans'
