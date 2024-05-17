@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
       </div>
 
       <div className="navbar__right">
-        <a href="/docs">Docs</a>
+        <a href="#">Docs</a>
         <span className="notifications">
           <img src={notify} alt="notification-icon" />
         </span>

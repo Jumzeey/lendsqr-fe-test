@@ -1,0 +1,143 @@
+@import '../../../lib/Sass/fonts/typography';
+@import '../../../lib/Sass/variables/index.scss';
+
+.table-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 30px 30px 0 30px;
+    overflow-x: auto;
+
+    .user-table {
+        width: 100%;
+        border-collapse: collapse;
+        position: relative;
+
+        .table-row{
+            position: relative;
+        }
+
+        th,
+        td {
+            padding: 20px 0;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 400;
+            color: $subText;
+            border-bottom: 1px solid #dddddd58;
+            .more {
+                cursor: pointer;
+            }
+
+            .more-modal {
+                background-color: white;
+                position: absolute;
+                width: fit-content;
+                right: 30px;
+                top: 20px;
+                z-index: 1000;
+                box-shadow: $shadow;
+
+                
+            }
+        }
+
+        th {
+            background-color: #fff;
+            color: $subText;
+            font-size: 12px;
+            font-weight: 600;
+
+            span {
+                display: flex;
+                gap: 10px;
+
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .status {
+            p {
+                border-radius: 100px;
+
+                width: fit-content;
+                padding: 6px 12px;
+            }
+
+            &.inactive {
+                color: $subText;
+
+                p {
+                    background-color: $inactive ;
+                }
+            }
+
+            &.pending {
+                color: $pending;
+
+                p {
+                    background-color: $BGpending;
+                }
+            }
+
+            &.blacklisted {
+                color: $blacklisted;
+
+                p {
+                    background-color: $BGblacklisted;
+                }
+            }
+
+            &.active {
+                color: $active;
+
+                p {
+                    background-color: $BGactive;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .user-table {
+
+        th,
+        td {
+            padding: 0.5rem;
+        }
+
+        thead {
+            display: none;
+        }
+
+        tbody,
+        tr,
+        td {
+            display: block;
+            width: 100%;
+        }
+
+        tr {
+            margin-bottom: 1rem;
+        }
+
+        td {
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+
+            &:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 1rem;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    }
+}

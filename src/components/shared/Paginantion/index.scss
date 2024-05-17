@@ -1,0 +1,74 @@
+@import '../../../lib/Sass/variables/index.scss';
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    .dots{
+      color: $Inactive;
+    }
+
+    .info{
+      color:$subText;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .info-select{
+      background-color: #545f7d27;
+      width: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    span {
+      margin: 0 0.5rem;
+    }
+  
+    select {
+      padding: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    .pagination-controls {
+      display: flex;
+      gap: 12px;
+      
+
+      .page-numbers{
+        padding: 0.25rem 0.5rem;
+        font-size: 16px;
+        font-weight: 500;
+        align-items: baseline;
+        
+        cursor: pointer;
+
+        &.active {
+          color: $subText;
+        }
+        &.inactive {
+          color: $Inactive;
+        }
+      }
+  
+      button {
+        // padding: 0.25rem 0.5rem;
+        // border: 1px solid #ccc;
+        // background-color: #f4f4f4;
+        // border-radius: 4px;
+        border: none;
+        cursor: pointer;
+  
+        
+  
+        &:disabled {
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  

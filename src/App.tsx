@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import SignInForm from './_auth/forms/SignInForm'
 import AuthLayout from './_auth/AuthLayout'
 import RootLayout from './_root/RootLayout'
-import { Users } from './_root/pages'
+import { Users, UsersDetails } from './_root/pages'
 import './App.scss'
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
         {/* private routes */}
         <Route element={<RootLayout />}>
           <Route path='/users' element={< Users />} />
+          <Route path='/users-details' element={< UsersDetails />} />
         </Route>
 
 
