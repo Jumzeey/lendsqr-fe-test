@@ -49,7 +49,8 @@ Follow these steps to set up the codebase locally:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/lendsqr-frontend-assessment.git
+   mkdir lendsqr-frontend-assessment
+   git clone https://github.com/Jumzeey/lendsqr-fe-test.git
    cd lendsqr-frontend-assessment
    ```
 
@@ -63,15 +64,6 @@ Follow these steps to set up the codebase locally:
    npm run dev
    ```
 
-4. **Build for production:**
-   ```sh
-   npm run build
-   ```
-
-5. **Preview the production build:**
-   ```sh
-   npm run serve
-   ```
 
 ## Usage
 After installing the dependencies and running the development server, you can view the application in your browser at `http://localhost:3000`.
