@@ -1,28 +1,3 @@
-Adding screenshots to your README file is a great way to showcase your project. Here's how you can do it:
-
-1. **Take Screenshots**: Capture the screenshots of your project. You can use tools like the built-in Snipping Tool on Windows, Screenshot on macOS, or any other screen capture tool.
-
-2. **Save the Screenshots**: Save the screenshots in a directory within your project, for example, `assets/screenshots`.
-
-3. **Add Screenshots to README**: Use Markdown to add the screenshots to your README file. 
-
-Here’s an example of how to include screenshots in your README:
-
-### Screenshots
-
-1. **Home Page**
-   ![Home Page](assets/screenshots/homepage.png)
-
-2. **User Details Page**
-   ![User Details Page](assets/screenshots/userdetails.png)
-
-4. **Navigation Sidebar**
-   ![Navigation Sidebar](assets/screenshots/sidebar.png)
-
-Make sure the paths to your screenshots are correct. Here's an updated version of your README file with placeholders for screenshots:
-
----
-
 # Lendsqr Frontend Assessment
 
 This project was developed as part of a frontend job assessment for Lendsqr. The application is built using React, SCSS, and TypeScript, with Axios for API calls and Mocky.io for generating JSON data. Vite is used as the build tool.
@@ -53,6 +28,9 @@ The project is organized as follows:
 
 ```
 src/
+|-- _auth/              # Authenticated users layout (for sign in and sign up pages)
+|-- _root/              # Sudo Authenticated users layout (for dashboard and other pages)
+|-- assets/              # all images file
 |-- components/         # Reusable UI components (inputs, search bars, buttons, cards, tables, navbar, sidebar)
 |-- lib/
 |   |-- data/           # Large data sets (e.g., sidebar navigation items)
