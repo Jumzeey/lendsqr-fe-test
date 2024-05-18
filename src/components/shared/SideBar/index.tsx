@@ -1,12 +1,12 @@
 import React from 'react'
 import './index.scss'
-import { IItems } from '../../../lib/types';
+import { IItems, ISideBarProps } from '../../../lib/types';
 import sidebarData from '../../../lib/data/sidebarData.json';
 
-const SideBar: React.FC = () => {
+const SideBar: React.FC<ISideBarProps> = ({ visible }) => {
 
   return (
-      <div className="sidebar">
+      <div className={`sidebar ${visible ? 'sidebar--visible' : 'sidebar--hidden'}`}>
         {sidebarData.sections.map((section, index) => (
           <div key={index} className='sidebar-content'>
             <div className="sidebar-header">

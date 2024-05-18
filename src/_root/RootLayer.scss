@@ -6,13 +6,19 @@
   }
   
   .main-content {
-    flex-grow: 1;
     display: flex;
     background-color: $lendsqrChildCol;
     
+    @media (max-width:786px) {
+      
+    }
 
     .outlet{
         padding: 60px;
+
+        @media (max-width:786px) {
+          padding: 10px;
+        }
     }
   }
   

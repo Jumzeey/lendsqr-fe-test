@@ -10,7 +10,7 @@ const RootLayout: React.FC = () => {
             <div className="root-layout">
                 <NavBar />
                 <main className="main-content">
-                    <SideBar />
+                    <SideBar visible={false} />
                     <div className='outlet'>
                         <Outlet/>
                     </div>

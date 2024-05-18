@@ -2,78 +2,139 @@
 @import '../../../lib/Sass/fonts/typography';
 
 .navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 0 1.5rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 786px) {
+    padding: 0 0.8rem;
+  }
+
+  &__left {
     display: flex;
-    position: relative;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-    padding: 0 1.5rem;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    gap: 145px;
 
-    &__left{
-      display: flex;
-      gap: 145px;
-    }
-    
-  
-    &__logo {
-      display: flex;
-      align-items: center;
-      width: 140px;
-  
-      img {
-        height: 40px;
-        margin-right: 0.5rem;
-      }
-    }
-  
-    &__search {
-      display: flex;
-      align-items: center;
-    }
-  
-    &__right {
-      display: flex;
-      width: 250px;
-      justify-content: space-between;
-      align-items: center;
-  
-      a {
-        margin-right: 1rem;
-        text-decoration: none;
-        color: $primarycol;
-        font-family:  sans-serif;
-        font-size: 1rem;
-        text-decoration: underline;
-      }
-  
-      .notifications {
-        cursor: pointer;
-      }
-  
-      .profile {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-
-        .label{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-        }
-        .profile_image{
-          border-radius: 100%;
-          width: 48px;
-          height: 48px;
-        }
-        span {
-          font-size: 1rem;
-          color: $primarycol;
-        }
-        
-      }
+    @media (max-width: 786px) {
+      gap: 50px;
     }
   }
-  
+
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 150px;
+
+    .desktop-logo {
+      display: block;
+      width: 100%;
+      margin-right: 0.5rem;
+
+
+      @media (max-width: 786px) {
+        display: none;
+      }
+    }
+
+    .mobile-logo {
+      display: none;
+
+
+      @media (max-width: 786px) {
+        display: block;
+      }
+    }
+
+    .menu-icon {
+      display: none;
+      height: 40px;
+      width: 15%;
+      margin-right: 20px;
+
+      @media (max-width: 786px) {
+        display: block;
+      }
+    }
+
+    @media (max-width: 786px) {
+      width: 300px;
+    }
+
+    .toggle-button {
+      width: 50px;
+
+    }
+
+    // img {
+    //   height: 40px;
+    //   margin-right: 0.5rem;
+    // }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+
+    @media (max-width:786px) {
+      display: none;
+    }
+  }
+
+  &__right {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width:786px) {
+      width: 100px;
+    }
+
+    a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: $primarycol;
+      font-family: sans-serif;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+
+    .notifications {
+      cursor: pointer;
+    }
+
+    .profile {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      @media (max-width:786px) {
+        display: none;
+      }
+
+      .label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .profile_image {
+        border-radius: 100%;
+        width: 48px;
+        height: 48px;
+      }
+
+      span {
+        font-size: 1rem;
+        color: $primarycol;
+      }
+
+    }
+  }
+}

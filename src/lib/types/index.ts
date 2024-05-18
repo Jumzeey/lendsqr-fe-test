@@ -24,6 +24,11 @@ export type ICard = {
   figure: number;
 };
 
+export type ISideBarProps = {
+  visible: boolean;
+  
+}
+
 export type IViewUserDetailsModalProps = {
   userDetails?: IUserDetailsProps;
   onClose: () => void;

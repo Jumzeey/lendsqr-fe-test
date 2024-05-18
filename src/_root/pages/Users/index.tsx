@@ -20,10 +20,6 @@ const Users: React.FC = () => {
     fetchUserData();
   }, []);
 
- 
-
-
-
 
   return (
     <>

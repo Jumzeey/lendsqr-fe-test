@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import avatar from '@/assets/avatar.svg';
+import back from '@/assets/back.svg';
 import star from '@/assets/star.svg';
 import { formatToNaira } from '../../../services';
+import { useNavigate } from 'react-router-dom';
 import './index.scss';
 import { IUserDetailsProps } from '../../../lib/types';
 
 const UserDetails: React.FC = () => {
   const [user, setUser] = useState<IUserDetailsProps | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Retrieve userDetails from local storage
@@ -22,6 +25,24 @@ const UserDetails: React.FC = () => {
 
   return (
     <div className='container'>
+      <div className="content">
+        <span className="back-link" onClick={() => navigate('/users')}>
+          <img src={back} alt="" /> <span>Back to Users</span>
+        </span>
+        <div className='user-details'>
+          <div>
+            <p>User Details</p>
+          </div>
+          <div className="buttons">
+            <button className="button blacklist">
+              BLACKLIST USER
+            </button>
+            <button className="button activate">
+              ACTIVATE USER
+            </button>
+          </div>
+        </div>
+      </div>
       <div key={user.id}>
         <div className="header-section">
           <div className='header'>

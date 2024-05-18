@@ -102,7 +102,8 @@ const Table: React.FC<TableProps> = ({ data, currentPage,
                                 <td data-label="EMAIL">{shortenText(user?.email, 15)}</td>
                                 <td data-label="PHONE NUMBER">{user?.phone_number}</td>
                                 <td data-label="DATE JOINED">{formatDate(user?.date_joined)}</td>
-                                <td data-label="STATUS" className={`status ${user?.status.toLowerCase()}`}><p>{user?.status}</p></td>
+                                <td data-label="STATUS" className={`status status-cell ${user?.status.toLowerCase()}`}><span>{user?.status}</span></td>
+                                
                                 <td>
                                     <img src={more} alt="more icon" className='more' onClick={() => handleMoreClick(user.id)} />
                                     <div className="more-modal">

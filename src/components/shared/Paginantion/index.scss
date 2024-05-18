@@ -6,6 +6,11 @@
     align-items: center;
     gap: 0.5rem;
 
+    @media (max-width:786px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
     .dots{
       color: $Inactive;
     }
