@@ -101,25 +101,25 @@ After installing the dependencies and running the development server, you can vi
 ## Screenshots
 
 1. **Sign In Page**
-   ![Home Page](assets/screenshots/signin-page-desktop.app.png)
+   ![Home Page](/src/assets/screenshots/signin-page-desktop.app.png)
 
 2. **User Details Page**
-   ![User Details Page](assets/screenshots/User-details-desktop.png)
+   ![User Details Page](/src/assets/screenshots/User-details-desktop.png)
 
 3. **Dashboard**
-   ![Navigation Sidebar](assets/screenshots/user-page-desktop.png)
+   ![Navigation Sidebar](/src/assets/screenshots/user-page-desktop.png)
 
 4. **Dashboard Mobile**
-   ![Home Page](assets/screenshots/user-page-mobile.app.png)
+   ![Home Page](/src/assets/screenshots/user-page-mobile.app.png)
 
 5. **Sign In Page Mobile**
-   ![Home Page](assets/screenshots/signin-page-mobile.app.png)
+   ![Home Page](/src/assets/screenshots/signin-page-mobile.app.png)
 
 6. **User Details Page Mobile**
-   ![Home Page](assets/screenshots/user-details-mobile.png)
+   ![Home Page](/src/assets/screenshots/user-details-mobile.png)
 
 7. **Dashboard with Modals**
-   ![Home Page](assets/screenshots/Userpage-with-filter-modal.png)
+   ![Home Page](/src/assets/screenshots/Userpage-with-filter-modal.png)
 
 ## Services
 Utility services for date, currency, and text formatting can be found in `src/lib/services/index.tsx`.
